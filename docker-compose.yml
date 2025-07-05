@@ -3,6 +3,7 @@ services:
   web:
     tty: true # keep the container running
     build: . # create the container with the dockerfile
+    command: bash -c "npm run dev -- --host 0.0.0.0"
     ports:
       - "8000:5173" # port 8000 of PC = port 5173 of container
     volumes:
