@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  web:
+    tty: true # keep the container running
+    build: . # create the container with the dockerfile
+    ports:
+      - "8000:5173" # port 8000 of PC = port 5173 of container
+    volumes:
+      - ./:/home/Portfolio # all in this directory goes in /home/Portfolio of the container
