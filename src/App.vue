@@ -1,47 +1,35 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import langOption from './components/langOption.vue'
+import NavBar from './components/NavBar.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+  <body>
+    <div class="main">
+      <NavBar/>
+      <langOption/>
+      <h1 class="welcome">{{ $t("main.welcome") }}</h1>
     </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  </body>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
+<style lang="css">
+body {
+  color: white;
+  background-image: url('/images/background.jpg');
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.main {
+  margin: 60px;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

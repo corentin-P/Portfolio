@@ -1,0 +1,28 @@
+@import '../main.css';
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    font-size: 25px;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.title a:hover {
+    color: var(--blue-color);
+}
+
+.links {
+    margin-left: auto;
+}
+
+.links a {
+    color: var(--blue-color);
+    margin-left: 40px;
+}
+
+.links a:hover {
+    color: var(--white-color);
+}

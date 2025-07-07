@@ -1,0 +1,29 @@
+@import '../main.css';
+
+.lang-switcher {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.lang-button {
+  border: none;
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lang-button.active {
+  background-color: var(--green-color);
+  color: var(--white-color);
+}
+
+.lang-button:hover {
+  background-color: var(--green-color);
+  color: var(--white-color);
+}
