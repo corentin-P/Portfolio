@@ -8,9 +8,10 @@
     font-size: 25px;
     text-decoration: none;
     color: var(--white-color);
+    transition: all 0.3s ease;
 }
 
-.title a:hover {
+.home a:hover {
     color: var(--blue-color);
 }
 

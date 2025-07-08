@@ -1,0 +1,30 @@
+@import '../main.css';
+@import '../components/buttonArrow.css';
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+}
+
+.title {
+  font-size: 7vh;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 3.5vh;
+  width: 35vw;
+}
+
+.discover {
+  display: flex;
+  flex-direction: row;
+}
+
+.button-arrow {
+  font-size: 3vh; 
+}

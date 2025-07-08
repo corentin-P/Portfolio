@@ -1,12 +1,12 @@
 <template>
     <div class="navbar">
-        <div class="title">
+        <div class="home">
             <a href=".">{{ $t("main.navbar.title") }}</a>
         </div>
         <div class="links">
-            <a href=".">{{ $t("main.navbar.page1") }}</a>
+            <a href="projects">{{ $t("main.navbar.page1") }}</a>
             <a href=".">{{ $t("main.navbar.page2") }}</a>
-            <a href=".">{{ $t("main.navbar.page3") }}</a>
+            <a href="about">{{ $t("main.navbar.page3") }}</a>
         </div>
     </div>
 </template>
