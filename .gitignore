@@ -31,3 +31,7 @@ coverage
 
 # lang
 src/lang
+
+# images 
+public/images
+public/resume.pdf

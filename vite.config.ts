@@ -12,13 +12,13 @@ export default defineConfig({
       '!': fileURLToPath(new URL('./public', import.meta.url))
     }
   },
-  root: "src/pages",
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
-        about: resolve(__dirname, 'about.html'),
-        projects: resolve(__dirname, 'projects.html'),
+        main: resolve(__dirname, 'src/pages/index.html'),
+        about: resolve(__dirname, 'src/pages/about.html'),
+        projects: resolve(__dirname, 'src/pages/projects.html'),
+        ongoingProjects: resolve(__dirname, 'src/pages/ongoing-projects.html')
       }
     }
   },

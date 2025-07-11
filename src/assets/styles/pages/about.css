@@ -1,1 +1,27 @@
 @import '../main.css';
+@import '../components/buttonArrow.css';
+
+.content {
+    margin-top: 10vh;
+    margin-left: 18vh;
+    margin-right: 18vh;
+}
+
+.sum-up {
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+    align-items: center;
+}
+
+.sum-up img {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 1000px;
+}
+
+.sum-up .text {
+    margin-top: 0;
+    padding-bottom: 3vh;
+}
+

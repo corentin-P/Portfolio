@@ -1,25 +1,27 @@
 .button-arrow {
-  margin-right: 2.5vw;
-  margin-left: 2.5vw;
-  border-radius: 30px;
-  padding-left: 1vw;
-  padding-right: 1.2vw;
-  padding-top: .3vw;
-  padding-bottom: .4vw;
-  background-color: var(--green-color);
-  border: 2px solid var(--green-color);
-  transition: all 0.3s ease;
-  text-decoration: none;
-  color: var(--black-color);
+    border-radius: 30px;
+    padding-left: 1vw;
+    padding-right: 1.2vw;
+    padding-top: .4vh;
+    padding-bottom: .5vh;
+    background-color: var(--green-color);
+    border: 2px solid var(--green-color);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--black-color);
 }
 
 .button-arrow:before {
-  content: "\279C"; 
-  padding-right: 0.5vw;
+    content: "\279C"; 
+    padding-right: 0.5vw;
 }
 
 .button-arrow:hover {
-  background-color: rgb(0 0 0 / 40%);
-  color: var(--green-color);    
-  cursor: pointer;
+    background-color: var(--black-color40);
+    color: var(--green-color);    
+    cursor: pointer;
+}
+
+.button-right {
+    float: right;
 }

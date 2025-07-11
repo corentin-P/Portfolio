@@ -5,20 +5,38 @@
     --blue-color: #4D9DE0;
     --green-color: #55D6BE;
     --black-color: #000000;
+    --black-color40: rgb(0 0 0 / 40%);
 }
 
 body {
-  color: white;
-  background-image: url('!/images/background2.jpg');
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: 'Inter';
+    color: white;
+    background-image: url('/images/background.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Inter';
 }
 
 .main {
-  margin-left: 4vw;
-  margin-right: 4vw;
-  margin-top: 8vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: 8vh;
+}
+
+.text {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    background-color: var(--black-color40);
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    border-radius: 30px;
+    text-align: justify;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
 }
