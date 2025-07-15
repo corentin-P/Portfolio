@@ -1,1 +1,20 @@
 @import '../main.css';
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    font-size: 25px;
+    justify-content: center;
+    margin-bottom: 8vh;
+}
+
+.categories a {
+    color: var(--green-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.categories a:hover {
+    color: var(--dark-green-color);
+}

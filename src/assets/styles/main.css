@@ -4,6 +4,7 @@
     --white-color: #FFFFFF;
     --blue-color: #4D9DE0;
     --green-color: #55D6BE;
+    --dark-green-color: #48A08F;
     --black-color: #000000;
     --black-color40: rgb(0 0 0 / 40%);
 }
@@ -24,6 +25,12 @@ body {
     margin-top: 8vh;
 }
 
+.content {
+    margin-top: 10vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
 .text {
     margin-top: 2vh;
     margin-bottom: 2vh;
@@ -39,4 +46,8 @@ body {
 .center {
     display: flex;
     justify-content: center;
+}
+
+.green {
+    color: var(--green-color);
 }

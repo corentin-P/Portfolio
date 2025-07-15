@@ -12,6 +12,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "deepmerge-ts": "^7.1.5",
     "vue": "^3.5.17",
     "vue-i18n": "^11.1.9"
   },

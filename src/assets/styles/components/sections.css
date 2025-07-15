@@ -1,0 +1,36 @@
+@import '../main.css';
+
+.experience {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    align-items: center;
+}
+
+.symbol {
+    width: 60px;
+    height: 60px;
+    border-radius: 200px;
+    align-items: center;
+    margin-right: 2vw;
+}
+
+.logos-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo {
+    width: auto;
+    height: 80px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-bottom: 2vh;
+}
+
+.space {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
