@@ -34,3 +34,20 @@
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
+
+.project {
+    margin-bottom: 8vh;
+}
+
+.project-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5vw;
+    flex-wrap: wrap;
+}
+
+.project-image {
+    height: 250px;
+    width: auto;
+}

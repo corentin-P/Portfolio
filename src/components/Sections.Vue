@@ -1,6 +1,7 @@
 <script setup lang="ts">
     import ExperienceSection from '@/components/ExperienceSection.vue'
     import LogosDescriptionsSection from '@/components/LogosDescriptionSection.vue'
+    import ProjectSection from '@/components/ProjectSection.vue'
     defineProps(['sections'])
 </script>
 
@@ -17,6 +18,9 @@
             </div>
             <div v-if="section.type == 'logos-description'" class="logos-list">
                 <logos-descriptions-section :content="section.content"/>
+            </div>
+            <div v-if="section.type == 'projects'">
+                <project-section :projects="section.content"/>
             </div>
         </div>
     </div>

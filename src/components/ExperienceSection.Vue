@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <h3>{{ experience.date }} :</h3>
+    <h3 v-if="experience.date">{{ experience.date }} :</h3>
     <div class="experience">
         <img class="symbol" :src="`${ experience.img }`" :alt="`${ experience.img-description }`">
         <div>
