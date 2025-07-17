@@ -12,8 +12,8 @@
             <div class="sum-up">
                 <img src="/images/moi.jpeg" alt="Photo de Corentin Piquerez">
                 <div class="text">
-                    <p v-for="text in $tm('about.sum-up.text')">{{ text }}</p> 
-                    <a class="button-arrow button-right" :href="`${ $t('about.sum-up.projects.url') }`">{{ $t("about.sum-up.projects.text") }}</a>
+                    <p v-for="text in $tm('about.sumup.text')">{{ text }}</p> 
+                    <a class="button-arrow button-right" :href="`${ $t('about.sumup.projects.url') }`">{{ $t("about.sumup.projects.text") }}</a>
                 </div>
             </div>
             <Sections :sections="$tm('about.resume.sections')"/>

@@ -10,6 +10,7 @@
         <h1 v-if="!section.titleInBox" class="center green">{{ section.title }}</h1>
         <div class="text">
             <h1 v-if="section.titleInBox" class="center">{{ section.title }}</h1>
+            <p v-if="section.sumup" v-for="text in section.sumup" class="center">{{ text }}</p>
             <div v-if="section.type == 'experience'" v-for="experience in section.content">
                 <experience-section :experience="experience"/>
             </div>
