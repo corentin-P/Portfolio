@@ -30,7 +30,9 @@ coverage
 *.tsbuildinfo
 
 # lang
-src/lang
+src/lang/config.json
+src/lang/en.json
+src/lang/fr.json
 
 # images 
 public/images
