@@ -3,7 +3,7 @@
         <div class="home">
             <a :href="`${$t('main.navbar.title.url')}`">{{ $t("main.navbar.title.text") }}</a>
         </div>
-        <div class="links">
+        <div class="pages">
             <a v-for="link in $tm('main.navbar.links')" :href="link.url">{{ link.text }}</a>
             <!--<a href=".">{{ $t("main.navbar.page2") }}</a>
             <a href="about">{{ $t("main.navbar.page3") }}</a>-->

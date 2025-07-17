@@ -15,15 +15,15 @@
     color: var(--blue-color);
 }
 
-.links {
+.pages {
     margin-left: auto;
 }
 
-.links a {
+.pages a {
     color: var(--blue-color);
     margin-left: 40px;
 }
 
-.links a:hover {
+.pages a:hover {
     color: var(--white-color);
 }

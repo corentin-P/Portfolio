@@ -51,3 +51,22 @@
     height: 250px;
     width: auto;
 }
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2vw;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.links a {
+    color: var(--white-color);
+    transition: all 0.3s ease;
+}
+
+.links a:hover {
+    color: var(--green-color);
+}
