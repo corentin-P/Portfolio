@@ -1,0 +1,14 @@
+# Stage 1: Build Vue app
+FROM node:24.3.0 as build-stage
+RUN mkdir /home/Portfolio
+WORKDIR /home/Portfolio
+COPY package*.json .
+RUN npm install
+COPY . .
+RUN npm run build
+
+# Stage 2: Serve Vue app with Nginx
+FROM nginx:1.29.0 as prod-stage
+COPY --from=build-stage /home/Portfolio /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

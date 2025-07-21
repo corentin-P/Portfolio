@@ -3,10 +3,11 @@
 .categories {
     display: flex;
     flex-direction: row;
-    gap: 2vw;
-    font-size: 25px;
+    flex-wrap: wrap;
+    gap: 4vw;
+    font-size: 1em;
     justify-content: center;
-    margin-bottom: 8vh;
+    margin-bottom: 6vh;
 }
 
 .categories a {
@@ -17,4 +18,10 @@
 
 .categories a:hover {
     color: var(--dark-green-color);
+}
+
+@media only screen and (min-width: 768px) {
+    .categories {
+        font-size: 2em;
+    }
 }

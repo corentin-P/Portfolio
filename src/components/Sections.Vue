@@ -14,7 +14,7 @@
             <div v-if="section.type == 'experience'" v-for="experience in section.content">
                 <experience-section :experience="experience"/>
             </div>
-            <div v-if="section.type == 'logos-list'" class="logos-list">
+            <div v-if="section.type == 'logos-list'" class="logos-list center">
                 <img v-for="logo in section.logos" class="logo" :src="logo.img" :alt="logo.alt">
             </div>
             <div v-if="section.type == 'logos-description'" class="logos-list">

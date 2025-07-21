@@ -3,7 +3,7 @@
 .lang-switcher {
   position: fixed;
   bottom: 3vh;
-  right: 1.5vw;
+  right: 5vw;
   display: flex;
   gap: 10px;
   z-index: 1000;
@@ -13,7 +13,7 @@
   border: none;
   border-radius: 20px;
   padding: 6px 16px;
-  font-size: 2vh;
+  font-size: 1em;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -26,4 +26,11 @@
 .lang-button:hover {
   background-color: var(--green-color);
   color: var(--white-color);
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .lang-switcher {
+    right: 1.5vw;
+  }
 }

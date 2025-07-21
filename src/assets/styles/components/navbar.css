@@ -2,28 +2,90 @@
 
 .navbar {
     display: flex;
+    align-items: center;
 }
 
-.navbar a {
-    font-size: 35px;
+.pages {
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: var(--blue-color);
+}
+.pages:hover {
+    color: var(--white-color);
+}
+
+.home a {
+    font-size: 2em;
     text-decoration: none;
     color: var(--white-color);
-    transition: all 0.3s ease;
 }
 
 .home a:hover {
     color: var(--blue-color);
 }
 
-.pages {
-    margin-left: auto;
+.desktop-pages {
+    display: none;
 }
 
-.pages a {
-    color: var(--blue-color);
+.desktop-pages a {
     margin-left: 40px;
 }
 
-.pages a:hover {
+
+.menu_button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 2vw;
+    background-color: transparent;
+    border: none;
+}
+
+.menu_button svg {
     color: var(--white-color);
+}
+
+.mobile-pages-menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-pages {
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+@media only screen and (min-width: 992px) {
+    nav {
+        margin-left: auto;
+    }
+    
+    .pages {
+        font-size: 2em;
+    }
+
+    .navbar a {
+        font-size: 2em;
+    }
+
+    .desktop-pages {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .menu_button {
+        display: none;
+    }
 }
