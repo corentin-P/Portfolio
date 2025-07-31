@@ -1,1 +1,3 @@
+User-agent: *
+Allow: /
 Sitemap: https://corentin-piquerez.fr/sitemap.xml
