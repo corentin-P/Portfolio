@@ -38,3 +38,6 @@ src/lang/fr.json
 public/images
 public/resume.pdf
 public/cv.pdf
+
+# sitemap
+src/sitemap.xml
