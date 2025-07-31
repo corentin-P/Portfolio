@@ -6,7 +6,7 @@
 </script>
 
 <template>
-    <div v-for="(section, name) in sections" :id="name">
+    <div v-for="(section, name) in sections" :id="name.toString()">
         <h1 v-if="!section.titleInBox" class="center green">{{ section.title }}</h1>
         <div class="text">
             <h1 v-if="section.titleInBox" class="center">{{ section.title }}</h1>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import langOption from '@/components/langOption.vue'
+import langOption from '@/components/LangOption.vue'
 import NavBar from '@/components/NavBar.vue'
 import Sections from '@/components/Sections.vue'
 </script>

@@ -1,3 +1,15 @@
+<script setup lang="ts">
+    import { ref } from 'vue'
+    import { useI18n } from 'vue-i18n'
+    
+    const show = ref(false)
+    type Link = {
+        url: string,
+        text: string
+    }
+
+</script>
+
 <template>
     <div class="navbar">
         <div class="home">
@@ -5,7 +17,7 @@
         </div>
         <nav>
             <ul class="desktop-pages">
-                <li v-for="link in $tm('main.navbar.links')">
+                <li v-for="link in $tm('main.navbar.links') as Link[]">
                     <a class="pages" :href="link.url">{{ link.text }}</a>
                 </li>
             </ul>
@@ -19,7 +31,7 @@
     <Transition>
         <nav v-show="show" class="mobile-pages-menu">
             <ul>
-                <li v-for="link in $tm('main.navbar.links')" class="mobile-pages">
+                <li v-for="link in  $tm('main.navbar.links') as Link[]" class="mobile-pages">
                     <a class="pages" :href="link.url">{{ link.text }}</a>
                 </li>
             </ul>
@@ -27,11 +39,6 @@
     </Transition>
 </template>
 
-<script setup>
-    import { ref } from 'vue'
-
-    const show = ref(false)
-</script>
 
 <style lang="css">
     @import '../assets/styles/components/navbar.css';

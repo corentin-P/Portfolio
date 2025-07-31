@@ -1,7 +1,18 @@
 <script setup lang="ts">
-import langOption from '@/components/langOption.vue'
+import langOption from '@/components/LangOption.vue'
 import NavBar from '@/components/NavBar.vue'
 import Sections from '@/components/Sections.vue'
+import { useI18n } from 'vue-i18n'
+
+interface Section {
+  [index: string]: {
+    type: string,
+    title: string,
+    content: {
+      [index: string]: {}
+    }
+  }
+}
 </script>
 
 <template>
@@ -10,7 +21,7 @@ import Sections from '@/components/Sections.vue'
       <NavBar/>
       <div class="content">
         <div class="categories">
-          <a v-for="(section, categorieName) in $tm('projects.sections')" :href="'#' + categorieName">
+          <a v-for="(section, categorieName) in $tm('projects.sections') as Section" :href="'#' + categorieName">
             {{ section.title }}
           </a>
         </div>

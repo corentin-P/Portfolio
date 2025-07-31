@@ -1,9 +1,9 @@
-<script setup>
+<script setup lang="ts">
     import { useI18n } from 'vue-i18n'
 
     const { locale, availableLocales } = useI18n()
 
-    function changeLang(lang) {
+    function changeLang(lang: string) {
         locale.value = lang
         localStorage.setItem('lang', lang)
     }
