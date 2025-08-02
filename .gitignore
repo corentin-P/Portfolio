@@ -40,4 +40,5 @@ public/resume.pdf
 public/cv.pdf
 
 # sitemap
-src/sitemap.xml
+public/sitemap.xml
+public/robots.txt

@@ -3,8 +3,11 @@ FROM node:24.3.0 as build-stage
 RUN mkdir /home/Portfolio
 WORKDIR /home/Portfolio
 COPY . .
-RUN npm install 
-RUN npm run build
+RUN npm install && \
+    npm run build && \
+    rm -f dist/index.html && \
+    mv ./dist/src/pages/* ./dist && \
+    rm -rf ./dist/src 
 
 # Stage 2: Serve Vue app with Nginx
 FROM nginx:1.29.0 as prod-stage
