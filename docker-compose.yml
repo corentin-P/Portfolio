@@ -1,11 +1,21 @@
 version: "3.9"
 services:
   web:
+    environment: 
+      FILE: "./node_modules"
     tty: true # keep the container running
     build: # create the container with the dockerfile of dev
       context: .
       dockerfile: Dockerfile.dev
-    command: bash -c "npm run dev -- --host 0.0.0.0"
+    command: >
+      bash -c '
+        if [ ! -d "$${FILE}" ]; then
+          echo "$${FILE} does not exist, running npm install && npm update"
+          npm install
+          npm update
+        fi
+        npm run dev -- --host 0.0.0.0
+      '
     ports:
       - "8000:5173" # port 8000 of PC = port 5173 of container
     volumes:
