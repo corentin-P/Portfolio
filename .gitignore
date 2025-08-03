@@ -28,17 +28,3 @@ coverage
 *.sw?
 
 *.tsbuildinfo
-
-# lang
-src/lang/config.json
-src/lang/en.json
-src/lang/fr.json
-
-# images 
-public/images
-public/resume.pdf
-public/cv.pdf
-
-# sitemap
-public/sitemap.xml
-public/robots.txt
