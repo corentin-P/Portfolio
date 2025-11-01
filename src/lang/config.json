@@ -1,0 +1,161 @@
+{
+    "main": {
+        "navbar": {
+            "title": {
+                "url": "."
+            },
+            "links": {
+                "link-left": {
+                    "url": "projects"
+                },
+                "link-middle": {
+                    "url": "ongoing-projects"
+                },
+                "link-right": {
+                    "url": "about"
+                }
+            }
+        }
+    }, 
+    "welcome": {
+        "projects-url": "projects",
+        "about-url": "about"
+    },
+    "about": {
+        "sumup": {
+            "projects": {
+                "url": "projects"
+            }
+        },
+        "resume": {
+            "sections": {
+                "Education": {
+                    "type": "experience",
+                    "titleInBox": true,
+                    "content": {
+                        "SC1": {
+                            "img": "/images/logos/logo.png"
+                        },
+                        "SC2": {
+                            "img": "/images/logos/logo.png"
+                        },
+                        "HS": {
+                            "img": "/images/logos/logo.png"
+                        }
+                    }
+                },
+                "Experience": {
+                    "type": "experience",
+                    "titleInBox": true,
+                    "content": {
+                        "EXP1": {
+                            "img": "/images/logos/logo.png"
+                        },
+                        "EXP2": {
+                            "img": "/images/logos/logo.png"
+                        }
+                    }
+                },
+                "IT skills": {
+                    "titleInBox": true,
+                    "type": "logos-list",
+                    "logos": [
+                        {
+                            "img": "/images/logos/IT/C.png",
+                            "alt": "Logo C"
+                        },
+                        {
+                            "img": "/images/logos/IT/C++.png",
+                            "alt": "Logo C++"
+                        },
+                        {
+                            "img": "/images/logos/IT/java.png",
+                            "alt": "Logo java"
+                        }
+                    ]
+                },
+                "Languages": {
+                    "type": "logos-description",
+                    "titleInBox": true,
+                    "content": {
+                        "French": {
+                            "img": "/images/logos/languages/france.jpg"
+                        },
+                        "English": {
+                            "img": "/images/logos/languages/uk.jpg"
+                        }
+                    }
+                }
+            },
+            "get-resume": {
+                "file": "/resume.pdf"
+            }
+        }
+    },
+    "projects": {
+        "sections": {
+            "Web": {
+                "type": "projects",
+                "content": {
+                    "My website": {
+                        "imgs": {
+                            "website": {
+                                "file": "/images/projects/logo.png",
+                                "link": "https://github.com/"
+                            }
+                        },
+                        "links": {
+                            "GitHub": {
+                                "link": "https://github.com/"
+                            },
+                            "website": {
+                                "link": "https://github.com/"
+                            }
+                        }
+                    },
+                    "My second website": {
+                        "imgs": {
+                            "website": {
+                                "file": "/images/projects/logo.png",
+                                "link": "https://github.com/"
+                            }
+                        },
+                        "links": {
+                            "GitHub": {
+                                "link": "https://github.com/"
+                            },
+                            "website": {
+                                "link": "https://github.com/"
+                            }
+                        }
+                    }
+                }
+            },
+            "Mobile": {
+                "type": "projects",
+                "content": {
+                    "first mobile app": {
+                        "imgs": {
+                            "login": {
+                                "file": "/images/projects/logo.png",
+                                "link": "https://github.com/"
+                            },
+                            "feed": {
+                                "file": "/images/projects/logo.png",
+                                "link": "https://github.com/"
+                            }
+                        },
+                        "links": {
+                            "GitHub-front": {
+                                "link": "https://github.com/"
+                            },
+                            "GitHub-back": {
+                                "link": "https://github.com/"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

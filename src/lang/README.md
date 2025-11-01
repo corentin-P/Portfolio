@@ -36,6 +36,10 @@ You will need to modify the [`importLangs.ts`](./importLangs.ts) file to create 
     - Add the code of the langages you've added separated by a ','
     - Remove the code you don't use (fr for example)
 
+## JSON file architecture  
+
+All your JSON file (except config.json) must have the same structure. There is __ONE__ object per page and __ONE__ main object to put the datas shared between the pages (the navbar for example)
+
 
 
 type Sections = 

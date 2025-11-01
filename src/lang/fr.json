@@ -1,0 +1,196 @@
+{
+    "main": {
+        "navbar": {
+            "title": {
+                "text": "<name>"
+            },
+            "links": {
+                "link-left": {
+                    "text": "Projets"
+                },
+                "link-middle": {
+                    "text": "Projects en cours"
+                },
+                "link-right": {
+                    "text": "A propos"
+                }
+            }
+        }
+    }, 
+    "welcome": {
+        "title": "Hey ! Je suis <nom>.",
+        "subtitle": "Petite description",
+        "about": "A propos",
+        "projects": "Mes projets"
+    },
+    "about": {
+        "sumup": {
+            "text": [
+            "Petite présentation",
+            "Sur plusieurs lignes"
+            ],
+            "projects": {
+                "text": "Voir mes projets"
+            }
+        },
+        "resume": {
+            "sections": {
+                "Education": {
+                    "title": "Education",
+                    "content": {
+                        "SC1": {
+                            "date": "Sept. 2024 – Juil. 2027",
+                            "description": ["Ecole ..."],
+                            "img-description": "logo de l'école"
+                        },
+                        "SC2": {
+                            "date": "2022 – 2024",
+                            "description": ["Autre école"],
+                            "img-description": "logo de l'autre école"
+                        },
+                        "HS": {
+                            "date": "2022",
+                            "description": ["Lycée"],
+                            "img-description": "logo du lycée"
+                        }
+                    }
+                },
+                "Experience": {
+                    "title": "Experience professionelle",
+                    "content": {
+                        "EXP1": {
+                            "date": "Sept. 2024 – Aujourd'hui",
+                            "title": "Dernière experience",
+                            "description": ["- Une chose", 
+                                            "- Une autre"
+                            ],
+                            "img-description": "logo de l'entreprise"
+                        },
+                        "EXP2": {
+                            "date": "Sept. 2023 – Aout. 2024",
+                            "title": "Autre experience",
+                            "description": ["- 1",
+                                            "- 2"
+                            ],
+                            "img-description": "logo de l'entreprise"
+                        }
+                    }
+                },
+                "IT skills": {
+                    "title": "Informatique"
+                },
+                "Languages": {
+                    "title": "Languages",
+                    "content": {
+                        "French": {
+                            "name": "Français",
+                            "alt": "Drapeau français",
+                            "description": [
+                                "Langue maternelle"
+                            ]
+                        },
+                        "English": {
+                            "name": "Anglais",
+                            "alt": "Drapeau du royaume uni",
+                            "description": [
+                                "B1 / B2"
+                            ]
+                        }
+                    }
+                }
+            },
+            "get-resume": {
+                "text": "Télécharger mon CV"
+            }
+        }
+    },
+    "projects": {
+        "sections": {
+            "Web": {
+                "title": "Web",
+                "sumup": [
+    
+                ],
+                "content": {
+                    "My website": {
+                        "title": "Mon site web",
+                        "description": [
+                            "Description.",
+                            "Sur plusieurs lignes."
+                        ],
+                        "imgs": {
+                            "website": {
+                                "alt": "Capture"
+                            }
+                        },
+                        "links": {
+                            "GitHub": {
+                                "text": "Premier lien"
+                            },
+                            "website": {
+                                "text": "Deuxième lien"
+                            }
+                        }
+                    },
+                    "My second website": {
+                        "title": "Mon deuxième site web",
+                        "description": [
+                            "Description",
+                            "Sur une deuxième ligne"
+                        ],
+                        "imgs": {
+                            "website": {
+                                "alt": "capture"
+                            }
+                        },
+                        "links": {
+                            "website": {
+                                "text": "lien"
+                            }
+                        }
+                    }
+                }
+            },
+            "Mobile": {
+                "title": "Applications mobiles",
+                "sumup": [
+                ],
+                "content": {
+                    "first mobile app": {
+                        "title": "Ma première application mobile",
+                        "description": [
+                            "C'est ma première appli",
+                            "J'en suis très fier"
+                        ],
+                        "imgs": {
+                            "login": {
+                                "alt": "Capture de la page de connexion"
+                            },
+                            "feed": {
+                                "alt": "Capture du feed"
+                            }
+                        },
+                        "links": {
+                            "GitHub-front": {
+                                "text": "Voir le repository Github du frontend"
+                            },
+                            "GitHub-back": {
+                                "text": "Voir le repository Github du backend"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "ongoing-projects": {
+        "sections": {
+            "News": {
+                "title": "Nouveautés",
+                "sumup": [
+                    "Architecture comme dans les projets"
+                ]
+            }
+        }
+    }
+}

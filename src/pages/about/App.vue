@@ -10,7 +10,7 @@
         <NavBar/>
         <div class="content">
             <div class="sum-up">
-                <img src="/images/moi.jpeg" alt="Photo de Corentin Piquerez">
+                <img src="/images/me.png" alt="Photo de Corentin Piquerez">
                 <div class="text">
                     <p v-for="text in $tm('about.sumup.text')">{{ text }}</p> 
                     <a class="button-arrow button-right" :href="`${ $t('about.sumup.projects.url') }`">{{ $t("about.sumup.projects.text") }}</a>
