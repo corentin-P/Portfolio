@@ -4,6 +4,6 @@ You can run this project with docker : `docker compose up`
 
 And then access to the local website (dev version) [here](http://localhost:8000/src/pages/)
 
-Developped with VueJS
+This website is customizable using json files. You can find the way to custom it [here](/src/lang/README.md). 
 
-You'll need to create the folder src/lang and create 2 files in src/lang, en.json and fr.json. 
+Developped with VueJS
