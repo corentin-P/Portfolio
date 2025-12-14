@@ -57,6 +57,10 @@ body {
 .green {
     color: var(--green-color);
 }
+
+.white {
+    color: var(--white-color);
+}
     
 .space {
     margin-top: 5vh;

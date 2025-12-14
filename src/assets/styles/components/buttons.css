@@ -1,4 +1,4 @@
-.button-arrow {
+.button {
     border-radius: 30px;
     padding-left: 1vw;
     padding-right: 1.2vw;
@@ -12,12 +12,7 @@
     text-align: center;
 }
 
-.button-arrow:before {
-    content: "\279C"; 
-    padding-right: 0.5vw;
-}
-
-.button-arrow:hover {
+.button:hover {
     background-color: var(--black-color40);
     color: var(--green-color);    
     cursor: pointer;
@@ -25,4 +20,9 @@
 
 .button-right {
     float: right;
+}
+
+.button-arrow:before {
+    content: "\279C"; 
+    padding-right: 0.5vw;
 }

@@ -1,0 +1,17 @@
+@import '../main.css';
+@import 'buttons.css';
+
+.contact {
+  position: fixed;
+  bottom: 3vh;
+  left: 5vw;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+
+@media only screen and (min-width: 1000px) {
+  .contact {
+    left: 1.5vw;
+  }
+}
