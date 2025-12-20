@@ -1,5 +1,5 @@
 @import '../main.css';
-@import '../components/buttonArrow.css';
+@import '../components/buttons.css';
 
 .sum-up {
     display: flex;

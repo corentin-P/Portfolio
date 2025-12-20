@@ -7,7 +7,10 @@
         <img class="symbol" :src="item.img" :alt="item.alt">
         <div>
             <h3>{{ item.name }}</h3>
-            <p v-for="desc in item.description">{{ desc }}</p>
+            <div v-for="desc in item.description">
+                <p v-if="typeof desc === 'string'">{{ desc }}</p>
+                <a target="_blank" class="white" v-else :href="desc.link">{{ desc.text }}</a>
+            </div>
         </div>
     </div>
 </template>

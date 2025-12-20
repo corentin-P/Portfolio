@@ -9,6 +9,7 @@ The structure of this folder must look like this (lang_code:  'en' for english f
 ```
 |
 |_ importLangs.ts
+|_ config.json
 |_ lang_code1.json
 |_ lang_code2.json
 |_ ...
@@ -41,7 +42,7 @@ You will need to modify the [`importLangs.ts`](./importLangs.ts) file to create 
 All your JSON file (except config.json) must have the same structure. There is __ONE__ object per page and __ONE__ main object to put the datas shared between the pages (the navbar for example)
 
 
-
+```
 type Sections = 
 {
     [index: string] : {
@@ -128,3 +129,4 @@ export type langs = {
     en: Lang,
     fr: Lang,
 }
+```

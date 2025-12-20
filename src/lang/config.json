@@ -23,6 +23,8 @@
     },
     "about": {
         "sumup": {
+            "profile_image": "/images/me.png",
+            "profile_image_desc": "Me",
             "projects": {
                 "url": "projects"
             }
@@ -153,6 +155,21 @@
                                 "link": "https://github.com/"
                             }
                         }
+                    }
+                }
+            }
+        }
+    },
+    "contact": {
+        "sections": {
+            "text": {
+                "type": "logos-description",
+                "content": {
+                    "Email": {
+                        "img": "/images/logos/contact/email.svg"
+                    },
+                    "LinkedIn": {
+                        "img": "/images/logos/contact/linkedin.png"
                     }
                 }
             }

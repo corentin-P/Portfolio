@@ -192,5 +192,32 @@
                 ]
             }
         }
+    },
+    "contact": {
+        "sections": {
+            "text": {
+                "title": "📧 Contact 📧",
+                "content": {
+                    "Email": {
+                        "name": "Email",
+                        "description": [
+                            {
+                                "text": "test@gmail.com",
+                                "link": "mailto:test@gmail.com"
+                            }
+                        ]
+                    },
+                    "LinkedIn": {
+                        "name": "LinkedIn",
+                        "description": [
+                            {
+                                "text": "Voir mon profil",
+                                "link": "https://www.linkedin.com/"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
     }
 }

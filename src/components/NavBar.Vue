@@ -13,7 +13,7 @@
 <template>
     <div class="navbar">
         <div class="home">
-            <a :href="`${$t('main.navbar.title.url')}`">{{ $t("main.navbar.title.text") }}</a>
+            <a :href="$t('main.navbar.title.url')">{{ $t("main.navbar.title.text") }}</a>
         </div>
         <nav>
             <ul class="desktop-pages">
