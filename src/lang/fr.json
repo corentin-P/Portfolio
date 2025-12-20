@@ -29,8 +29,8 @@
             "Petite présentation",
             "Sur plusieurs lignes"
             ],
-            "projects": {
-                "text": "Voir mes projets"
+            "get-resume": {
+                "text": "Télécharger mon CV"
             }
         },
         "resume": {
@@ -99,8 +99,8 @@
                     }
                 }
             },
-            "get-resume": {
-                "text": "Télécharger mon CV"
+            "projects": {
+                "text": "Voir mes projets"
             }
         }
     },

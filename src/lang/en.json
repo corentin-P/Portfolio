@@ -29,8 +29,8 @@
             "You can do a small presentation here. ",
             "It can be on multiple lines"
             ],
-            "projects": {
-                "text": "See my projects"
+            "get-resume": {
+                "text": "Download my resume"
             }
         },
         "resume": {
@@ -99,8 +99,8 @@
                     }
                 }
             },
-            "get-resume": {
-                "text": "Download my resume"
+            "projects": {
+                "text": "See my projects"
             }
         }
     },
