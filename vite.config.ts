@@ -29,7 +29,8 @@ export default defineConfig({
         main: resolve(__dirname, 'src/pages/index.html'),
         about: resolve(__dirname, 'src/pages/about.html'),
         projects: resolve(__dirname, 'src/pages/projects.html'),
-        ongoingProjects: resolve(__dirname, 'src/pages/ongoing-projects.html')
+        ongoingProjects: resolve(__dirname, 'src/pages/ongoing-projects.html'),
+        contact: resolve(__dirname, 'src/pages/contact.html')
       }
     }
   },
