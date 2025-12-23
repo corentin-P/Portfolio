@@ -1,9 +1,9 @@
 # How to configure the website (langs)
 
-This website is highly customizable by JSON files and can be translated in different langages. You must create these translations files here. If you only want one langage, you'll just need to create one file. 
+This website is highly customizable by JSON files and can be translated in different languages. You must create these translations files here. If you only want one langage, you'll just need to create one file. 
 
 ## File architecture
-__Files__ : You'll need one file (config.json) to configure what is common of all the langages like the images or the links you want to put on your page. Then, you'll need one JSON file per langage you want to add.
+__Files__ : You'll need one file (config.json) to configure what is common of all the languages like the images or the links you want to put on your page. Then, you'll need one JSON file per langage you want to add.
 
 The structure of this folder must look like this (lang_code:  'en' for english for exemple): 
 ```
@@ -17,25 +17,25 @@ The structure of this folder must look like this (lang_code:  'en' for english f
 ```
 
 ## The importLangs.ts file
-You will need to modify the [`importLangs.ts`](./importLangs.ts) file to create the new langages that you add. For instance, you'll need to modify : 
+You will need to modify the [`importLangs.ts`](./importLangs.ts) file to create the new languages that you add. For instance, you'll need to modify : 
 - The import section :
     
     - Add the line `import messages_<lang_code>.json from './<lang_code>.json'`
-    - Remove the langages that you don't have configured (messages_fr.json for example)
+    - Remove the languages that you don't have configured (messages_fr.json for example)
 - The complete langage : 
     - Add the line `const <lang_code> = deepmerge(config, messages_<lang_code>);` under the similar lines 
-    - Remove the lines of the langages you don't use 
+    - Remove the lines of the languages you don't use 
 - At this line : 
     
     ```export const i18n = createI18n<[Schema], "en" | "fr">```
 
-    - Add the code of the langages you've added separated by a pipe (|)
+    - Add the code of the languages you've added separated by a pipe (|)
     - Remove the code you don't use (fr for example)
 - At this line : 
 
     ```messages: {en, fr}```
 
-    - Add the code of the langages you've added separated by a ','
+    - Add the code of the languages you've added separated by a ','
     - Remove the code you don't use (fr for example)
 
 ## JSON file architecture  
