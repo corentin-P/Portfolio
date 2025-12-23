@@ -93,7 +93,11 @@
                             "name": "English",
                             "alt": "United kingdom flag",
                             "description": [
-                                "B1 / B2"
+                                {
+                                    "text": "C1 - cambridge",
+                                    "link": "https://www.cambridgeenglish.org/exams-and-tests/qualifications/advanced/"
+                                },
+                                "I also did an exchange in the USA"
                             ]
                         }
                     }

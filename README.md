@@ -11,6 +11,8 @@ You can also pull the docker image `clashcoco/portfolio:1.0` which the official 
 docker pull clashcoco:portfolio:1.0
 ```
 
+![homepage](./doc/homepage.png)
+
 ## Create your own website
 
 First, I really recommend you to mirror this repository, so you have your own repository with a copy of this one in it. 
