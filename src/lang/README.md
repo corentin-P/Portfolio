@@ -34,6 +34,7 @@ You will need to modify the [`importLangs.ts`](./importLangs.ts) file to create 
 - At this line : 
 
     ```messages: {en, fr}```
+
     - Add the code of the langages you've added separated by a ','
     - Remove the code you don't use (fr for example)
 
@@ -41,92 +42,61 @@ You will need to modify the [`importLangs.ts`](./importLangs.ts) file to create 
 
 All your JSON file (except config.json) must have the same structure. There is __ONE__ object per page and __ONE__ main object to put the datas shared between the pages (the navbar for example)
 
+You can find the components configuration [here](/src/components/README.md)
 
-```
-type Sections = 
+```json
 {
-    [index: string] : {
-        // config
-        type: "experience" | "logos-list" | "logos-description" | "projects",
-        titleInBox?: boolean,
-        // lang
-        title: string,
-        sumup?: [],
-        logos?: [{
-            img: string,
-            alt: string,
-        }],
-        content: {
-            [index: string]: {
-                date?: string,
-                title?: string,
-                description?: [],
-                "img-description"?: string,
-                img?: string,
-                name?:string,
-                alt?: string,
-                imgs?: {
-                    [index: string]: {
-                        alt?: string,
-                        file: string,
-                        link?: string
-                    }
-                },
-                links?: {
-                    [index: string]: {
-                        text: string,
-                        link: string
-                    }
-                }
-
-            }
-        }
-    }
-};
-
-type Main = {
-    navbar: {
-        title: {
-            text: string
-        },
-        links: {
-            [index: string]: {
-                "text": string
-            }
-        }
-    }
-}
-
-type Welcome = {
-    title: string,
-    subtitle: string,
-    about: string,
-    projects: string,
-}
-
-type About = {
-    sumup: 
-    {
-        text: [string],
-        projects: {
-            text: string
-        },
-        resume: {
-            "sections": Sections
+    "main": { // for common components 
+        "navbar": {
+            --- See NavBar component for the configuration ---
         }
     },
+    "welcome": { // for the welcome page
+        "title": "Hey ! I'm <name>.",
+        "subtitle": "Very short description",
+        "about": "About me",
+        "projects": "My projects",
+        "projects-url": "projects",
+        "about-url": "about"
+    },
+    "about": { // for the about page
+        "sumup": {
+            "text": [
+            "You can do a small presentation here. ",
+            "It can be on multiple lines"
+            ],
+            "get-resume": {
+                "text": "Download my resume",
+                "url": "/resume.pdf" // in public folder
+            },
+            "profile_image": "/images/me.png", // in public folder
+            "profile_image_desc": "Me"
+        },
+        "resume": {
+            "sections": {
+                --- See Sections component for the configuration ---
+            }
+        },
+        "projects": {
+            "text": "See my projects",
+            "url": "projects"
+        }
+    },
+    "ongoing-projects": {
+        "sections": {
+            --- See Sections component for the configuration ---
+        }
+    },
+    "projects": { // for the projects page
+        "sections": {
+            --- See Sections component for the configuration ---
+        }
+    },
+    "contact": { // for the contact page
+        "sections": {
+            --- See Sections component for the configuration ---
+        }
+    }
 }
 
-type Lang = {
-    main: Main,
-    welcome: Welcome,
-    about: About,
-    projects: Sections,
-    "ongoing-projects": Sections
-}
-
-export type langs = {
-    en: Lang,
-    fr: Lang,
-}
 ```

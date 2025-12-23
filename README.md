@@ -48,7 +48,9 @@ git push --mirror
 
 To set the content of the website, you'll need to edit JSON files. 
 
-You can find the details of the configuration files [here](/src/lang/README.md).
+You can find the details of the JSON configuration files [here](/src/lang/README.md).
+
+You can also find the details of all the available components and their configuration [here](/src/components/README.md).
 
 ## Run in development 
 

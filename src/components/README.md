@@ -116,11 +116,17 @@ Then you can configure it in JSON :
             "<section-name1>": {
                 "type": "<type>",
                 "titleInBox": true|false,
+                "sumup": [ // not mandatory
+                    "Architecture as you want, like projects for example"
+                ],
                 --- Attributes of the subsection ---
             },
             "<section-name2>": {
                 "type": "<type>",
                 "titleInBox": true|false,
+                "sumup": [ // not mandatory
+                    "Architecture as you want, like projects for example"
+                ],
                 --- Attributes of the subsection ---
             },...
         }
