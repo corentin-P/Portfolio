@@ -5,7 +5,7 @@ import config from './config.json'
 // translations imports 
 import messages_en from './en.json'
 import messages_fr from './fr.json'
-// --- add here the imports for the other langages ---
+// --- add here the imports for the other languages ---
 
 const en = deepmerge(config, messages_en);
 const fr = deepmerge(config, messages_fr);
