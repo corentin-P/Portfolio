@@ -1,10 +1,9 @@
 <script setup lang="ts">
-    
 </script>
 
 <template>
   <div class="contact">
-    <a class="button" href="./contact">Contact</a>
+    <RouterLink class="button" to="/contact">Contact</RouterLink>
   </div>
 </template>
 
