@@ -1,12 +1,12 @@
 <script setup lang="ts">
-    import { useI18n } from 'vue-i18n'
+  import { useI18n } from 'vue-i18n'
 
-    const { locale, availableLocales } = useI18n()
+  const { locale, availableLocales } = useI18n()
 
-    function changeLang(lang: string) {
-        locale.value = lang
-        localStorage.setItem('lang', lang)
-    }
+  function changeLang(lang: string) {
+      locale.value = lang
+      localStorage.setItem('lang', lang)
+  }
 </script>
 
 <template>
@@ -23,5 +23,5 @@
 </template>
 
 <style lang="css">
-    @import '../assets/styles/components/langOption.css';
+  @import '../assets/styles/components/langOption.css';
 </style>

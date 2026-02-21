@@ -6,7 +6,7 @@ This repository contains basic graphical components and architecture to create a
 
 You can find an exemple website [here](https://portfolio-demo.corentin-piquerez.fr/), which contains all the graphical components available.
 
-You can also pull the docker image `clashcoco/portfolio:1.0` which the official image of the example website.
+You can also pull the docker image `clashcoco/portfolio:1.0` which is the official image of the example website.
 ```sh
 docker pull clashcoco:portfolio:1.0
 ```
@@ -48,6 +48,8 @@ To set the content of the website, you'll need to edit JSON files.
 
 You can find the details of the configuration files [here](/src/lang/README.md).
 
+You can also find the list of the available components & their configuration [here](/src/components/README.md).
+
 ## Run in development 
 
 You can run this project with docker (you first need to install docker) : 
@@ -58,5 +60,5 @@ docker compose up
 
 And then access to the local website (dev version) at 
 ```sh
-http://localhost:8000/src/pages/
+http://localhost:8000
 ```
