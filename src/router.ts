@@ -2,7 +2,7 @@ import { createWebHistory, createRouter } from 'vue-router'
 
 import HomeView from './views/home.vue'
 import AboutView from './views/about.vue'
-import Contact from './views/contact'
+import Contact from './views/contact.vue'
 import Projects from './views/projects.vue'
 import OngoingProjects from './views/ongoing-projects.vue'
 

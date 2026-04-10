@@ -2,7 +2,7 @@
     "main": {
         "navbar": {
             "title": {
-                "text": "<name>"
+                "text": "Home"
             },
             "links": {
                 "link-left": {
@@ -110,6 +110,26 @@
     },
     "projects": {
         "sections": {
+            "projects_gallery": {
+                "type": "gallery",
+                "content": {
+                    "project1": {
+                        "title": "Java project",
+                        "sum_up": "Development of a Java application",
+                        "tags": ["language::Java", "DataMining"]
+                    },
+                    "project2": {
+                        "title": "C project",
+                        "sum_up": "Development of a C CLI tool",
+                        "tags": ["language::C", "algorithm"]
+                    },
+                    "project3": {
+                        "title": "Portfolio website project",
+                        "sum_up": "Development of my personal portfolio",
+                        "tags": ["web", "front-end"]
+                    }
+                }
+            },
             "Web": {
                 "title": "Web",
                 "sumup": [

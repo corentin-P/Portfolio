@@ -1,16 +1,19 @@
 <script setup lang="ts">
-  import ExperienceSection from '@/components/ExperienceSection.vue'
-  import LogosDescriptionsSection from '@/components/LogosDescriptionSection.vue'
-  import ProjectSection from '@/components/ProjectSection.vue'
+  import ExperienceSection from '@/components/section_subcomponents/ExperienceSection.vue'
+  import LogosDescriptionsSection from '@/components/section_subcomponents/LogosDescriptionSection.vue'
+  import ProjectSection from '@/components/section_subcomponents/ProjectSection.vue'
+  import GallerySection from '@/components/section_subcomponents/GallerySection.vue';
+  import { is_text_section } from './section_subcomponents/utils';
   defineProps(['sections'])
 </script>
 
 <template>
   <div v-for="(section, name) in sections" :id="name.toString()">
     <h1 v-if="!section.titleInBox" class="center green">{{ section.title }}</h1>
-    <div class="text">
+    <div class="text" v-if="is_text_section(section.type)">
       <h1 v-if="section.titleInBox" class="center">{{ section.title }}</h1>
       <p v-if="section.sumup" v-for="text in section.sumup" class="center">{{ text }}</p>
+
       <div v-if="section.type == 'experience'" v-for="experience in section.content">
         <experience-section :experience="experience"/>
       </div>
@@ -23,6 +26,9 @@
       <div v-if="section.type == 'projects'">
         <project-section :projects="section.content"/>
       </div>
+    </div>
+    <div v-if="section.type == 'gallery'">
+      <gallery-section :items="section.content"/>
     </div>
   </div>
 </template>

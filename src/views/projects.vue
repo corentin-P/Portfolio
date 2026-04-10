@@ -14,12 +14,8 @@ interface Section {
 
 <template>
   <body>
+    <h1 class="center">Projects</h1>
     <div class="content">
-      <div class="categories">
-        <a v-for="(section, categorieName) in $tm('projects.sections') as Section" :href="'#' + categorieName">
-          {{ section.title }}
-        </a>
-      </div>
       <Sections :sections="$tm('projects.sections')"/>
     </div>
   </body>

@@ -96,6 +96,31 @@
     },
     "projects": {
         "sections": {
+            "projects_gallery": {
+                "type": "gallery",
+                "content": {
+                    "project1": {
+                        "img": "/images/logos/IT/java.png",
+                        "github": "https://github.com"
+                    },
+                    "project2": {
+                        "img": "/images/logos/IT/C.png",
+                        "github": "https://github.com"
+                    },
+                    "project3": {
+                        "img": "/images/logos/logo.png",
+                        "github": "https://github.com"
+                    },
+                    "project4": {
+                        "img": "/images/logos/logo.png",
+                        "github": "https://github.com"
+                    },
+                    "project5": {
+                        "img": "/images/logos/logo.png",
+                        "github": "https://github.com"
+                    }
+                }
+            },
             "Web": {
                 "type": "projects",
                 "content": {
@@ -157,6 +182,13 @@
                         }
                     }
                 }
+            }
+        }
+    },
+    "ongoing-projects": {
+        "sections": {
+            "News": {
+                "type": "section"
             }
         }
     },
