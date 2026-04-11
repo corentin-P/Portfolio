@@ -1,0 +1,75 @@
+@import '../main.css';
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: auto;
+    width: 15vw;
+    background-color: var(--black-color40);
+    border-radius: 30px;
+    margin: 2vh;
+    transition: 0.3s;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 10px 10px hsla(0, 0%, 100%, 0.75);
+}
+
+.card-content {
+    padding: 2vh;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-content {
+    transform: scale(1.1);
+}
+
+.card img {
+    max-height: 12vh;
+    width: auto;
+    display: block;
+    margin: auto;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 8px;
+    column-gap: 8px;
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: solid;
+    border-radius: 30px;
+    border-color: var(--green-color);
+}
+
+.tag-left {
+    background-color: var(--green-color);
+    padding: 4px 8px;
+}
+
+.tag-right {
+    background-color: var(--black-color40);
+    padding: 4px 8px;
+}
+
+.tag:not(:has(.tag-left)) {
+    background-color: var(--green-color);
+    padding: 4px 10px;
+}

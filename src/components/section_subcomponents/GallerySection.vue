@@ -7,14 +7,24 @@
 
 <template>
   <div class="cards">
-    <div v-for="item in items" class="card">
-      <div class="card-content" v-on:click="open_modal">
+    <div v-for="item in items" class="card" v-on:click="open_modal">
+      <div class="card-content">
         <img :src="item.img" :alt="item.alt">
         <hr>
-        <h2 class="center">{{ item.title }}</h2>
+        <h2>{{ item.title }}</h2>
         <hr>
         <p>{{ item.sum_up }}</p>
-        <span class="tag" v-for="tag in item.tags">{{ tag }}</span>
+        <div class="tags">
+          <span class="tag" v-for="tag in item.tags">
+            <template v-if="tag.includes('::')">
+              <span class="tag-left">{{ tag.split('::')[0] }}</span>
+              <span class="tag-right">{{ tag.split('::')[1] }}</span>
+            </template>
+            <template v-else>
+              {{ tag }}
+            </template>
+            </span>
+        </div>
       </div>
     </div>
 
@@ -22,5 +32,5 @@
 </template>
 
 <style>
-  @import '@/assets/styles/components/sections.css';
+  @import '@/assets/styles/components/gallery_section.css';
 </style>

@@ -66,45 +66,6 @@
     color: var(--green-color);
 }
 
-.cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.card {
-    height: auto;
-    width: 15vw;
-    background-color: var(--black-color40);
-    border-radius: 30px;
-    padding: 2vh;
-    margin: 2vh;
-}
-
-.card-content {
-    transition: zoom 0.3s;
-}
-.card-content:hover {
-    cursor: pointer;
-    transition: zoom 0.3s;
-    zoom: 110%;
-}
-
-.card img {
-    max-height: 12vh;
-    width: auto;
-    display: block;
-    margin: auto;
-}
-
-.tag {
-    margin-right: 0.5vw;
-    padding: 8px;
-    background-color: var(--green-color);
-    border-radius: 30px;
-}
-
 @media only screen and (min-width: 600px) {
     .experience {
         margin-left: 1vw;

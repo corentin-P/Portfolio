@@ -23,5 +23,5 @@
 </template>
 
 <style lang="css">
-  @import '../assets/styles/components/langOption.css';
+  @import '../assets/styles/components/lang_option.css';
 </style>
