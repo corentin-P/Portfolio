@@ -100,23 +100,33 @@
                 "type": "gallery",
                 "content": {
                     "project1": {
+                        "id": "p1",
                         "img": "/images/logos/IT/java.png",
+                        "alt": "project image",
                         "github": "https://github.com"
                     },
                     "project2": {
+                        "id": "p2",
                         "img": "/images/logos/IT/C.png",
+                        "alt": "project image",
                         "github": "https://github.com"
                     },
                     "project3": {
+                        "id": "p3",
                         "img": "/images/logos/logo.png",
+                        "alt": "project image",
                         "github": "https://github.com"
                     },
                     "project4": {
+                        "id": "p4",
                         "img": "/images/logos/logo.png",
+                        "alt": "project image",
                         "github": "https://github.com"
                     },
                     "project5": {
+                        "id": "p5",
                         "img": "/images/logos/logo.png",
+                        "alt": "project image",
                         "github": "https://github.com"
                     }
                 }
