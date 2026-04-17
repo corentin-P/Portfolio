@@ -227,6 +227,38 @@ Json configuration :
 }
 ```
 
+### Gallery
+
+![gallery-component](/doc/gallery-component.png)
+![gallery-component](/doc/modal-gallery-component.png)
+
+```json
+"sections": {
+    "projects_gallery": {
+        "type": "gallery",
+        "content": {
+            "project1": {
+                "title": "Portfolio website project",
+                "sum_up": "Development of my personal portfolio",
+                "description": ["Development of my personal portfolio"],
+                "tags": ["language::Java", "DataMining"]                "img": "/images/projects/this.png",
+                "alt": "project image",
+                "main_link": "https://github.com",
+                "links": [
+                    {
+                        "icon": "/images/logos/IT/GitHub_Invertocat_White.png",
+                        "alt": "github logo",
+                        "link": "https://github.com/"
+                    },
+                    ...
+                ]
+            }, ...
+        }
+    }, ...
+}
+```
+
+
 ### Projects
 
 ![projects-component](/doc/projects-component.png)
