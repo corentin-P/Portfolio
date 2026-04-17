@@ -13,7 +13,7 @@
     <div class="text" v-if="is_text_section(section.type)">
       <h1 v-if="section.titleInBox" class="center">{{ section.title }}</h1>
       <p v-if="section.sumup" v-for="text in section.sumup" class="center">{{ text }}</p>
-
+      
       <div v-if="section.type == 'experience'" v-for="experience in section.content">
         <experience-section :experience="experience"/>
       </div>
@@ -27,7 +27,9 @@
         <project-section :projects="section.content"/>
       </div>
     </div>
+    
     <div v-if="section.type == 'gallery'">
+      <h1 v-if="section.titleInBox" class="center">{{ section.title }}</h1>
       <gallery-section :items="section.content"/>
     </div>
   </div>

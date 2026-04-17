@@ -112,23 +112,30 @@
         "sections": {
             "projects_gallery": {
                 "type": "gallery",
+                "title": "Projects",
                 "content": {
                     "project1": {
-                        "title": "Java project",
-                        "sum_up": "Development of a Java application",
-                        "description": "Development of a Java application",
+                        "title": "Portfolio website project",
+                        "sum_up": "Development of my personal portfolio",
+                        "description": ["Development of my personal portfolio"],
                         "tags": ["language::Java", "DataMining"]
                     },
                     "project2": {
                         "title": "C project",
                         "sum_up": "Development of a C CLI tool",
-                        "description": "Development of a C CLI tool",
+                        "description": ["Development of a C CLI tool"],
                         "tags": ["language::C", "algorithm"]
                     },
                     "project3": {
-                        "title": "Portfolio website project",
-                        "sum_up": "Development of my personal portfolio",
-                        "description": "Development of my personal portfolio",
+                        "title": "Java project",
+                        "sum_up": "Development of a Java application",
+                        "description": ["Development of a Java application"],
+                        "tags": ["web", "front-end"]
+                    },
+                    "project4": {
+                        "title": "Example",
+                        "sum_up": "Example",
+                        "description": ["Example"],
                         "tags": ["web", "front-end"]
                     }
                 }

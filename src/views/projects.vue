@@ -14,7 +14,6 @@ interface Section {
 
 <template>
   <body>
-    <h1 class="center">Projects</h1>
     <div class="content">
       <Sections :sections="$tm('projects.sections')"/>
     </div>

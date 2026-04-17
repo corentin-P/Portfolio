@@ -3,6 +3,7 @@
 :root {
     --white-color: #FFFFFF;
     --blue-color: #4D9DE0;
+    --blue-filter: invert(61%) sepia(24%) saturate(1084%) hue-rotate(167deg) brightness(89%) contrast(97%);
     --dark-blue-color: #0F172A;
     --green-color: #55D6BE;
     --dark-green-color: #48A08F;

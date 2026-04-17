@@ -98,36 +98,47 @@
         "sections": {
             "projects_gallery": {
                 "type": "gallery",
+                "titleInBox": true,
                 "content": {
                     "project1": {
-                        "id": "p1",
-                        "img": "/images/logos/IT/java.png",
+                        "img": "/images/projects/this.png",
                         "alt": "project image",
-                        "github": "https://github.com"
+                        "main_link": "https://github.com",
+                        "links": [
+                            {
+                                "icon": "/images/logos/IT/GitHub_Invertocat_White.png",
+                                "alt": "github logo",
+                                "link": "https://github.com/"
+                            },
+                            {
+                                "icon": "/images/logos/IT/gitlab-logo.png",
+                                "alt": "github logo",
+                                "link": "https://gitlab.com/"
+                            },
+                            {
+                                "icon": "/images/logos/IT/GitHub_Invertocat_White.png",
+                                "alt": "github logo",
+                                "link": "https://github.com/"
+                            }
+                        ]
                     },
                     "project2": {
                         "id": "p2",
                         "img": "/images/logos/IT/C.png",
                         "alt": "project image",
-                        "github": "https://github.com"
+                        "main_link": "https://github.com"
                     },
                     "project3": {
                         "id": "p3",
-                        "img": "/images/logos/logo.png",
+                        "img": "/images/logos/IT/java.png",
                         "alt": "project image",
-                        "github": "https://github.com"
+                        "main_link": "https://github.com"
                     },
                     "project4": {
                         "id": "p4",
                         "img": "/images/logos/logo.png",
                         "alt": "project image",
-                        "github": "https://github.com"
-                    },
-                    "project5": {
-                        "id": "p5",
-                        "img": "/images/logos/logo.png",
-                        "alt": "project image",
-                        "github": "https://github.com"
+                        "main_link": "https://github.com"
                     }
                 }
             },
