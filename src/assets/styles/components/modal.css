@@ -28,6 +28,10 @@
   scrollbar-width: thin;
 }
 
+.modal-content p {
+  margin-right: auto;
+}
+
 .modal-content hr {
   color: var(--white-color);
   width: 50%;

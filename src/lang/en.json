@@ -124,7 +124,7 @@
                         "title": "C project",
                         "sum_up": "Development of a C CLI tool",
                         "description": ["Development of a C CLI tool"],
-                        "tags": ["language::C", "algorithm"]
+                        "tags": ["language::C", "algorithm", "CLI tool", "Embedded application", "Test::Unit Test"]
                     },
                     "project3": {
                         "title": "Java project",
@@ -134,6 +134,12 @@
                     },
                     "project4": {
                         "title": "Example",
+                        "sum_up": "Example",
+                        "description": ["Example"],
+                        "tags": ["web", "front-end"]
+                    },
+                    "project5": {
+                        "title": "Test without main link",
                         "sum_up": "Example",
                         "description": ["Example"],
                         "tags": ["web", "front-end"]
