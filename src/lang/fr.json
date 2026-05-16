@@ -106,6 +106,42 @@
     },
     "projects": {
         "sections": {
+            "projects_gallery": {
+                "type": "gallery",
+                "title": "Projects",
+                "content": {
+                    "project1": {
+                        "title": "Projet de site vitrine",
+                        "sum_up": "Développement de mon portfolio personnel",
+                        "description": ["Développement de mon portfolio personnel"],
+                        "tags": ["language::Java", "DataMining"]
+                    },
+                    "project2": {
+                        "title": "Projet C",
+                        "sum_up": "Developpement d'un outil en CLI en C",
+                        "description": ["Developpement d'un outil en CLI en C"],
+                        "tags": ["language::C", "algorithm"]
+                    },
+                    "project3": {
+                        "title": "Projet en Java",
+                        "sum_up": "Developpement d'une application en Java",
+                        "description": ["Developpement d'une application en Java"],
+                        "tags": ["web", "front-end"]
+                    },
+                    "project4": {
+                        "title": "Example",
+                        "sum_up": "Example",
+                        "description": ["Example"],
+                        "tags": ["web", "front-end"]
+                    },
+                    "project5": {
+                        "title": "Test sans lien principal",
+                        "sum_up": "Example",
+                        "description": ["Example"],
+                        "tags": ["web", "front-end"]
+                    }
+                }
+            },
             "Web": {
                 "title": "Web",
                 "sumup": [

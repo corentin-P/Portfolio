@@ -1,6 +1,8 @@
 <script setup lang="ts">
   import { ref } from 'vue'
   import Modal from '@/components/Modal.vue'
+  import Tags from '@/components/Tags.vue'
+
   defineProps(['items'])
 
   const isModalOpen = ref<boolean>(false)
@@ -21,17 +23,7 @@
         <h2>{{ item.title }}</h2>
         <hr>
         <p>{{ item.sum_up }}</p>
-        <div class="tags">
-          <span class="tag" v-for="tag in item.tags">
-          <div v-if="tag.includes('::')">
-            <span class="tag-left">{{ tag.split('::')[0] }}</span>
-            <span class="tag-right">{{ tag.split('::')[1] }}</span>
-          </div>
-          <div v-else>
-            {{ tag }}
-          </div>
-          </span>
-        </div>
+        <Tags :tags="item.tags"/>
       </div>
     </div>
   </div>
